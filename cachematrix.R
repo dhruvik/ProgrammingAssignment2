@@ -45,7 +45,7 @@ cacheSolve <- function(x, ...) {
         #Check if Inverse was cached. 
         
         #If yes, return that inverse
-        if(is.null(inverseMatrix)){
+        if(!is.null(inverseMatrix)){
           message("getting cached data")
           return(inverseMatrix)
         }
